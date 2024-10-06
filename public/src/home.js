@@ -14,6 +14,8 @@ function getBooksBorrowedCount(books) {
   // YOUR SOLUTION HERE
   // Hint: You can use the [`filter()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) method here. 
   // If you get stuck, feel free to take a look at this repl.it: https://replit.com/@thinkful/getBooksBorrowedCount#index.js
+  const filtered = books.filter((book) => book.borrows[0].returned === false);
+  return filtered.length;
 }
 
 // Tbis is a helper function that's called by other functions inside this file. You don't have to edit it.
