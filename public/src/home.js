@@ -1,5 +1,7 @@
 function getTotalBooksCount(books) {
   // YOUR SOLUTION HERE
+  const total = books.length;
+  return total;
 }
 
 function getTotalAccountsCount(accounts) {
